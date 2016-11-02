@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <br>
+        <input type="button" name="b1" value="check">
+        <br>
+        <input type="button" name="b2" value="uncheck">
+        </form>
+        <script>
+        var df = document.forms;
+            df.f1.b1.addEventListener('click', function(){
+                  for(var i=0; i<df.f1.length-2; i++){
+                    df.f1.elements[i].checked=true;
+                }
+            })
+             df.f1.b2.addEventListener('click', function(){
+                  for(var i=0; i<df.f1.length-2; i++){
+                    df.f1.elements[i].checked=false;
+                }
+        })
+        </script>
+</body>
+</html>

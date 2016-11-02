@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Вивести за допомогою циклів (for, while чи do while) табличку множення від 2 до 9 у тегах table через скріпт, методом document.write.</p>
+
+	<script>
+		var sum;
+			document.write('<table border="1px">');
+			document.write('<tr>');
+		for(var a=1;a<10;a++){
+			for(var b=1;b<9;b++){
+		var h = a*b
+			document.write('<td>'+a+"*"+b+"="+h+'</td>');
+		}
+		var v = a*b
+			document.write('<td>'+a+"*"+b+"="+v+'</td>');
+			document.write('</tr>');
+		}
+			document.write('</tr>');
+			document.write('</table>');
+	</script>
+</body>
+</html>

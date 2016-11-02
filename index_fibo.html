@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>Виведіть на екран перші 11 членів послідовності Фібоначчі. Нагадуємо, що перший і другий члени послідовності рівні одиницям, а кожен наступний - сумою двох попередніх.</p>
+<!--    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89-->
+   
+<!--   Fn=Fn-1 = Fn-2-->
+    <script>
+        var f=-1, n=1;
+        var sum;
+        var s=" ";
+   for(var i=0; i<11;i++){
+       sum = f+n;
+       f=n;
+       n = sum;
+        s+=sum+" "
+   }
+   
+   alert(s);       
+
+    </script>
+</body>
+</html>

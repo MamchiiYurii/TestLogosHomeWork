@@ -1,0 +1,142 @@
+body {
+    background-image: url(images/ball-light-shine-cube-dark-red.jpg);
+}
+
+#show {
+    width: 614px;
+    height: 378px;
+    background-image: url(images/tablet_PNG8566.png);
+    margin: auto;
+    background-color: #676562;
+    border-radius: 20px;
+    display: block;
+}
+/*Змінити при скролінгу*/
+#show_2 {  
+    width: 614px;
+    height: 378px;
+    background-image: url(images/tablet_PNG8566.png);
+    margin: auto;
+    background-color: #676562;
+    border-radius: 20px;
+    overflow-y: scroll;
+    display: block;
+}
+
+#edit {
+    width: 614px;
+    height: 378px;
+    background-image: url(images/tablet_PNG8566.png);
+    margin: auto;
+    background-color: #840b0b;
+    border-radius: 20px;
+    display: block;
+}
+
+#btn1 {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: 120px;
+    box-shadow: 5px 5px red;
+    font-family: fantasy;
+    font-size: 15pt;
+    
+}
+
+#btn1:hover {
+    box-shadow: 5px 5px black;
+    color: red;
+    transition: 0.8s;
+}
+
+#btn2:hover {
+    box-shadow: 5px 5px black;
+    color: red;
+    transition: 0.8s;
+}
+
+#btn2 {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-left: 10px;
+    box-shadow: 5px 5px red;
+    font-family: fantasy;
+    font-size: 15pt;
+    
+}
+
+#btn {
+    width: 500px;
+    height: 75px;
+    margin: auto;
+}
+
+#editField {
+    margin: 45px 70px;
+    overflow-y: scroll;
+}
+
+#saveBtn {
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 80px;
+    box-shadow: 4px 4px red;
+    font-family: fantasy;
+    font-size: 15pt;
+}
+
+#addBtn {
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 30px;
+    box-shadow: 4px 4px red;
+    font-family: fantasy;
+    font-size: 15pt;
+}
+
+#saveBtn:hover {
+    box-shadow: 5px 5px black;
+    color: red;
+    transition: 0.8s;
+}
+
+#addBtn:hover {
+    box-shadow: 5px 5px black;
+    color: red;
+    transition: 0.8s;
+}
+
+#editForm {
+    display: none;
+}
+
+.inside1{
+    padding: 100px 70px;
+    color: whitesmoke;
+}
+.inside2{
+    padding: 40px 70px;
+}
+
+#chois {
+    height: 730px;
+    width: 480px;
+    display: none;
+    margin: auto;
+    background-image: url(images/tablet_PNG8590.png);
+    background-color: #620202;
+    border-radius: 50px;
+}
+#listVisibl {
+    
+}

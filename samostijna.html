@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Samostijna</title>
+</head>
+
+<body>
+    <script>
+        var r = prompt('Введіть кількість рядків', '00');
+        var d = prompt('Введіть кількість стовпців', '00');
+        var b = prompt('Розмір рамки', '00');
+        var c = prompt('Відстань між ячейками', '00');
+        var w = prompt('Ширина', '00');
+        var h = prompt('Висота', '00');
+        var y = prompt('Колір 1');
+        var g = prompt('Колір 2');
+        var t = " ";
+
+        document.write('<table border="' + b + '" cellspacing="' + c + '" width="' + w + '" height="' + h + '">');
+        document.write('<tr>');
+
+        for (var a = 0; a < r; a++) {
+            for (var b = 0; b < d; b++) {
+
+                if ((a + b) % 2) {
+                    document.write('<td bgcolor="' + y + '">' + t + '</td>'); // background="'+y+'"
+                } else {
+                    document.write('<td bgcolor="' + g + '">' + t + '</td>'); // background="'+g+'"
+                }
+
+            }
+            document.write('</tr>');
+        }
+        document.write('</tr>');
+        document.write('</table>');
+    </script>
+</body>
+
+</html>

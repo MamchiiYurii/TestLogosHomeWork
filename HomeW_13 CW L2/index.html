@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Control</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!--Блок вводу вибору таблиці чи списка-->
+    <div id="chois">
+        <div class="inside1">
+            <!--вибір табллиці чи списку-->
+            <div id="chois2">
+                <h1>What we will add?</h1>
+                <form name="addChois">
+                    <label>
+                        <input type="radio" name="tabl" id="tabl" value="Table">Table</label>
+                    <label>
+                        <input type="radio" name="tabl" id="list" value="List">List</label>
+                </form>
+            </div>
+            <!--Блок створення таблиці-->
+            <div id="createTable">
+                <form name="table">
+                    <div class="styl">
+                        <label>Number of rows:
+                            <input type="text" name="row" id="row">
+                        </label><span id="span1">Enter a NUMBER please!</span>
+                    </div>
+                    <div class="styl">
+                        <label>Number of colums:
+                            <input type="text" name="col" id="col">
+                        </label><span id="span2">Enter a NUMBER please!</span>
+                    </div>
+                    <h2>Stylize table</h2>
+                    <div class="styl">
+                        <label>Width:
+                            <input type="text" name="width" id="width"><span id="span3">Enter a NUMBER please!</span>
+                        </label>
+                    </div>
+                    <div class="styl">
+                        <label>Height:
+                            <input type="text" name="Height" id="height">
+                        </label><span id="span4">Enter a NUMBER please!</span>
+                    </div>
+                    <div class="styl">
+                        <label>Weight:
+                            <input type="text" name="heavy" id="weight">
+                        </label><span id="span5">Enter a NUMBER please!</span>
+                        <div class="styl">
+                            <label>Line type
+                                <select name="lineType" id="lineType">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                </select>
+                            </label>
+                            <label>Line color
+                                <select name="lineColor" id="lineColor">
+                                    <option value="black">black</option>
+                                    <option value="red">red</option>
+                                    <option value="green">green</option>
+                                    <option value="blue">blue</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="styl">
+                        <input type="button" value="create" name="createTable" id="createTab">
+                    </div>
+                </form>
+            </div>
+            <!--Блок створення списку-->
+            <div id="creatList">
+                <form name="listChois">
+                    <div id="markNumb"><label>
+                        <input type="radio" name="list" id="mark" value="Table">Mark</label>
+                    <label>
+                        <input type="radio" name="list" id="num" value="List">Number</label>
+                        </div>
+                </form>
+                <form name="list" id="listVisibl">
+                    <div id="stylList">
+                        <label>Number of elements:
+                            <input type="text" name="kst" id="kst">
+                        </label><span id="span6">Enter a NUMBER please!</span>
+                    </div>
+                    <div id="markType">
+                        <label>Mark type
+                            <select name="typeMark" id="typeMark">
+                                <option value="circle">Circle</option>
+                                <option value="disc">Disc</option>
+                                <option value="square">Square</option>
+
+                            </select>
+                        </label>
+                    </div>
+                    <div id="numbType">
+                        <div id="numTp">
+                            <label>Number type
+                                <select name="numbMark" id="numbMark">
+                                    <option value="A">Upper case</option>
+                                    <option value="a">Lover case</option>
+                                    <option value="I">Romanian numbers</option>
+                                    <option value="1">Arabian numbers</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div id="firstPos">
+                            <label>Number of start
+                                <input type="text" name="firstPos" id="fp">
+                            </label><span id="span7">Enter a NUMBER please!</span>
+                        </div>
+                        <div class="styl">
+                            <div id="revers">
+                                <label>Reversed
+                                    <input type="checkbox" name="reversed" id="reversed">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="styl">
+                        <input type="button" value="create" name="createListM" id="createListM">
+                    </div>
+                    <div class="styl">
+                        <input type="button" value="create" name="createListN" id="createListN">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Блок виводу данних-->
+    <div id="show">
+        <form name="showForm">
+            <div class="inside2">
+                <p>Some text for example</p>
+                <p>Some text for example</p>
+                <p>Some text for example</p>
+                <p>Some text for example</p>
+                <p>Some text for example</p>
+            </div>
+        </form>
+    </div>
+        <div id="pass">
+          <div id="pass_in">
+           <p class="textp">Enter a password please</p>
+           <p class="texti">Incorect password, try again</p>
+           <form name="password">
+            <input type="password"  name="passw" id="passw" placeholder="0000">
+            <input type="button" method="get" value="Submit" name="submit" id="btns">
+            </form>
+            </div>
+        </div>
+    <!--головні кнопки-->
+    <div id="btn">
+        <form name="buttons">
+            <input id="btn1" type="button" value="Edit" name="edit">
+            <input id="btn3" type="button" value="BLOCK" name="block">
+            <input id="btn2" type="button" value="Stylize" name="stylize">
+        </form>
+    </div>
+    <!--Блок вводу та редагування-->
+    <div id="edit">
+        <div id="editForm">
+            <form name="editForm">
+                <textarea name="editField" id="editField" cols="56" rows="11"></textarea>
+                <input type="button" id="saveBtn" value="Save" name="save">
+                <input type="button" id="addBtn" value="Add" name="add">
+            </form>
+
+        </div>
+        <!--Блок вводу данних стилізації-->
+        <div id="stylize">
+            <form name="stylize" class="inside3">
+                <div class="styl1">
+                    <label>Text size:</label>
+                    <label>
+                        <input type="radio" name="r1" value="12pt">12pt</label>
+                    <label>
+                        <input type="radio" name="r1" value="14pt">14pt</label>
+                    <label>
+                        <input type="radio" name="r1" value="16pt">16pt</label>
+                    <label>
+                        <input type="radio" name="r1" value="18pt">18pt</label>
+                    <label>
+                        <input type="radio" name="r1" value="20pt">20pt</label>
+                </div>
+                <div class="styl">
+                    <select name="fontStyl" id="fontStyle">
+                        <option value="Arial">Arial</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Lucida Console">Lucida Console</option>
+                    </select>
+                </div>
+
+                <div class="styl">
+                    <input type="button" name="color" value="color" id="color">
+                    <input type="button" name="bgr" value="bgr" id="bgr">
+
+                    <!--таблиця для вибору кольору тексту та беграунда-->
+                    <div>
+                        <table id="colort">
+                            <tr>
+                                <td style="background-color:#720c8b;"></td>
+                                <td style="background-color:yellow;"></td>
+                                <td style="background-color:green;"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:blue;"></td>
+                                <td style="background-color:#29dda6;"></td>
+                                <td style="background-color:brown;"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:violet;"></td>
+                                <td style="background-color:#27890f;"></td>
+                                <td style="background-color:#d9a414;"></td>
+                            </tr>
+                        </table>
+
+                        <table id="colorb">
+                            <tr>
+                                <td style="background-color:#d9a414;"></td>
+                                <td style="background-color:yellow;"></td>
+                                <td style="background-color:violet;"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:blue;"></td>
+                                <td style="background-color:#29dda6;"></td>
+                                <td style="background-color:brown;"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:aqua;"></td>
+                                <td style="background-color:#27890f;"></td>
+                                <td style="background-color:#720c8b;"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="styl">
+                    <label>
+                        <input type="checkbox" name="bold" value="bold"> Bold</label>
+                    <label>
+                        <input type="checkbox" name="italic" value="italic">Italic</label>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/javcsr.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+</body>
+
+</html>
